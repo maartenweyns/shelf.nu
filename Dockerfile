@@ -55,4 +55,4 @@ COPY --from=build /myapp/start.sh /myapp/start.sh
 
 RUN ["chmod", "+x", "/myapp/start.sh"]
 
-ENTRYPOINT [ "./start.sh" ]
+ENTRYPOINT [ "sh" "/myapp/start.sh" ]
